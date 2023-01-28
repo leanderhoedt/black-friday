@@ -66,6 +66,7 @@ export default {
             seconds.value = Math.floor((distance % (1000 * 60)) / 1000);
         };
 
+        // Formatting the days, hours, minutes, and seconds to have a leading zero if the value is less than 10.
         const formattedDays = computed(() => {
             return days.value < 10 ? `0${days.value}` : days.value;
         });

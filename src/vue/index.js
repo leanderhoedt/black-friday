@@ -1,3 +1,3 @@
 export default {
-    Countdown: () => import('./Countdown/Countdown.vue')
+    Countdown: () => import('./Countdown/Countdown.vue'),
 };
