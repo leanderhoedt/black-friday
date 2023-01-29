@@ -60,6 +60,11 @@ export default {
         const isSubmitted = ref(false);
         const errorMessage = ref('');
 
+        /**
+         * Subscription to newsletter, which does a POST to /api/newsletter with emailAddress as payload
+         * Enable/disable the button based on isSubmitted
+         * Show error message when needed
+         */
         const subscribe = async () => {
             try {
                 const { data } = await axios.post('/api/newsletter', {
