@@ -24,7 +24,6 @@
 import { ref } from 'vue';
 
 export default {
-    props: {},
     setup() {
         const infoItems = ref([
             {

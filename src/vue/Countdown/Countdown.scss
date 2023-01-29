@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #000;
     width: min-content;
 
     &__item {
@@ -10,8 +10,8 @@
     }
 
     &__square {
-        background-color: white;
-        color: black;
+        background-color: #fff;
+        color: #000;
         width: 4rem;
         height: 4rem;
         display: flex;

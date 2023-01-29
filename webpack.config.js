@@ -18,6 +18,7 @@ module.exports = {
 
             devServer.app.use(express.json());
             devServer.app.post('/api/newsletter', function (req, res) {
+
                 if (req.body && req.body.emailAddress) {
                     if (req.body.emailAddress === 'existinguser@nayan.be') {
                         res.json({ success: false, errorMessage: 'EXISTING_USER' });
